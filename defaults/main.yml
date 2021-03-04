@@ -26,19 +26,19 @@ kojid_packages:
   - imagefactory-plugins-vSphere
   - rng-tools
 
-kojid_vendor: Rocky
-kojid_packager: infrastructure@rockylinux.org
-kojid_distribution: Rocky
-kojid_web_url: https://koji.rockylinux.org/koji
-kojid_hub_url: https://koji.rockylinux.org/kojihub
-kojid_files_url: https://koji.rockylinux.org/kojifiles
+kojid_vendor: Circle
+kojid_packager: infrastructure@cclinux.org
+kojid_distribution: Circle
+kojid_web_url: https://koji.cclinux.org/koji
+kojid_hub_url: https://koji.cclinux.org/kojihub
+kojid_files_url: https://koji.cclinux.org/kojifiles
 kojid_ca_bundle: /etc/pki/tls/certs/ca-bundle.crt
 kojid_keytab: /etc/kojid.keytab
-kojid_smtp_host: smtp.rockylinux.org
+kojid_smtp_host: smtp.cclinux.org
 kojid_smtp_user: smtpuser
 kojid_smtp_pass: smtppass
-kojid_allowed_scm: "git.centos.org:/* git.rockylinux.org:/*"
-kojid_bugzilla: https://bugs.rockylinux.org
+kojid_allowed_scm: "git.centos.org:/* git.cclinux.org:/*"
+kojid_bugzilla: https://bugs.cclinux.org
 
 kojid_maxjobs: 10
 kojid_minspace: 4096
@@ -46,7 +46,7 @@ kojid_minspace: 4096
 # NFS
 kojid_nfs: false
 kojid_mount: /mnt/koji
-kojid_nfs_path: nfs.rockylinux.org:/export/koji
+kojid_nfs_path: nfs.cclinux.org:/export/koji
 
 # Are we building images? This is definable in a playbook
 kojid_image_builder: false
@@ -58,7 +58,7 @@ kojid_buildtools_repo: False
 kojid_buildtools_repo_host: https://localhost
 kojid_buildtools_repo_url: "{{ kojid_buildtools_repo_host  }}/builder/$basearch/"
 kojid_buildtools_repo_gpgcheck: false
-kojid_buildtools_repo_gpgkey: RPM-GPG-KEY-Rocky-Infra
+kojid_buildtools_repo_gpgkey: RPM-GPG-KEY-Circle-Infra
 
 # SSH Pubkeys, define them in a playbook
 # mockbuilder_pub_key
